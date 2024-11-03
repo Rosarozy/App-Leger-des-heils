@@ -1,15 +1,15 @@
+/* Algemene styling */
 body {
     font-family: Arial, sans-serif;
+    height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+    color: #eee8e8;
 }
-
-h1 {
-    font-size: 24px;
-    text-align: center;
-    padding: 20px;
+h1{
+text-align: center; 
+font-size: 24px;
+padding: 20px;
 }
 
 p {
@@ -17,6 +17,106 @@ p {
     text-align: center;
     padding: 10px;
 }
+
+/* Specifieke styling per pagina */
+.home-page {
+    background: linear-gradient(to bottom, #bd2d2d,#020a06); 
+
+    .Vooruit{
+        position: absolute;
+            top: 10px; 
+            left: 330px; 
+            width: 30px; 
+            height: auto; 
+            justify-content: flex-end
+    }
+    
+}
+.header-logo img{       /* Als Class staat in je HTML dan zet je in CSS . */
+    position: absolute;
+    top: 2px;          /* Kleine afstand vanaf de bovenkant */
+    left: 10px;         /* Kleine afstand vanaf de linkerkant */
+    width: 60px;        /* Stel de breedte in op een kleinere waarde */
+    height: auto;       /* Houdt de verhoudingen van het logo intact */
+}
+
+.legerdesheils-page {
+    background: linear-gradient( to bottom, #72319e, #020a06);
+
+    }
+
+    .Home {
+        position: absolute;
+        top: 10px; 
+        left: 10px; 
+        width: 30px; 
+        height: auto; 
+    }
+   .Vooruit{
+    position: absolute;
+        top: 10px; 
+        left: 330px; 
+        width: 30px; 
+        height: auto; 
+        justify-content: flex-end
+   }
+   .Terug{
+    position: absolute;
+        top: 10px; 
+        left: 290px; 
+        width: 30px; 
+        height: auto; 
+        justify-content: flex-end
+   }
+.Verblijfplek-page {
+    background: linear-gradient( to bottom, #22553b, #020a06);
+
+    .Home {
+        position: absolute;
+        top: 10px; 
+        left: 10px; 
+        width: 30px; 
+        height: auto; 
+    }
+   .Vooruit{
+    position: absolute;
+        top: 10px; 
+        left: 330px; 
+        width: 30px; 
+        height: auto; 
+        justify-content: flex-end
+   }
+   .Terug{
+    position: absolute;
+        top: 10px; 
+        left: 290px; 
+        width: 30px; 
+        height: auto; 
+        justify-content: flex-end
+   }
+}
+
+.Doneren-page {
+    background: linear-gradient( to bottom, rgb(60, 166, 130) , #020a06);
+    .Home {
+        position: absolute;
+        top: 10px; 
+        left: 10px; 
+        width: 30px; 
+        height: auto; 
+    }
+     
+   .Terug{
+    position: absolute;
+        top: 10px; 
+        left: 290px; 
+        width: 30px; 
+        height: auto; 
+        justify-content: flex-end
+    }
+}
+   
+
 
 .btn {
     display: block;
