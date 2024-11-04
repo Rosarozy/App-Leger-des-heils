@@ -6,10 +6,11 @@ body {
     padding: 0;
     color: #eee8e8;
 }
-h1{
-text-align: center; 
-font-size: 24px;
-padding: 20px;
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
 }
 
 p {
@@ -20,102 +21,201 @@ p {
 
 /* Specifieke styling per pagina */
 .home-page {
-    background: linear-gradient(to bottom, #bd2d2d,#020a06); 
+    background: linear-gradient(to bottom, #bd2d2d, #020a06);
 
-    .Vooruit{
+    .Vooruit {
         position: absolute;
-            top: 10px; 
-            left: 330px; 
-            width: 30px; 
-            height: auto; 
-            justify-content: flex-end
+        top: 10px;
+        left: 330px;
+        width: 30px;
+        height: auto;
+        justify-content: flex-end
     }
-    
+
 }
-.header-logo img{       /* Als Class staat in je HTML dan zet je in CSS . */
+
+.header-logo img {
+    /* Als Class staat in je HTML dan zet je in CSS . */
     position: absolute;
-    top: 2px;          /* Kleine afstand vanaf de bovenkant */
-    left: 10px;         /* Kleine afstand vanaf de linkerkant */
-    width: 60px;        /* Stel de breedte in op een kleinere waarde */
-    height: auto;       /* Houdt de verhoudingen van het logo intact */
+    top: 2px;
+    /* Kleine afstand vanaf de bovenkant */
+    left: 10px;
+    /* Kleine afstand vanaf de linkerkant */
+    width: 60px;
+    /* Stel de breedte in op een kleinere waarde */
+    height: auto;
+    /* Houdt de verhoudingen van het logo intact */
 }
 
 .legerdesheils-page {
-    background: linear-gradient( to bottom, #72319e, #020a06);
+    background: linear-gradient(to bottom, #72319e, #020a06);
 
-    }
+}
 
-    .Home {
-        position: absolute;
-        top: 10px; 
-        left: 10px; 
-        width: 30px; 
-        height: auto; 
-    }
-   .Vooruit{
+.Home {
     position: absolute;
-        top: 10px; 
-        left: 330px; 
-        width: 30px; 
-        height: auto; 
-        justify-content: flex-end
-   }
-   .Terug{
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: auto;
+}
+
+.Vooruit {
     position: absolute;
-        top: 10px; 
-        left: 290px; 
-        width: 30px; 
-        height: auto; 
-        justify-content: flex-end
-   }
+    top: 10px;
+    left: 330px;
+    width: 30px;
+    height: auto;
+    justify-content: flex-end
+}
+
+.Terug {
+    position: absolute;
+    top: 10px;
+    left: 290px;
+    width: 30px;
+    height: auto;
+    justify-content: flex-end
+}
+
+
+.klik-icoon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+}
+
 .Verblijfplek-page {
-    background: linear-gradient( to bottom, #22553b, #020a06);
+    background: linear-gradient(to bottom, #22553b, #020a06);
 
     .Home {
         position: absolute;
-        top: 10px; 
-        left: 10px; 
-        width: 30px; 
-        height: auto; 
+        top: 10px;
+        left: 10px;
+        width: 30px;
+        height: auto;
     }
-   .Vooruit{
-    position: absolute;
-        top: 10px; 
-        left: 330px; 
-        width: 30px; 
-        height: auto; 
+
+    .Vooruit {
+        position: absolute;
+        top: 10px;
+        left: 330px;
+        width: 30px;
+        height: auto;
         justify-content: flex-end
-   }
-   .Terug{
-    position: absolute;
-        top: 10px; 
-        left: 290px; 
-        width: 30px; 
-        height: auto; 
+    }
+
+    .Terug {
+        position: absolute;
+        top: 10px;
+        left: 290px;
+        width: 30px;
+        height: auto;
         justify-content: flex-end
-   }
+    }
+
+    .huislegerdesheils img {
+        width: 500px;
+        /* Specifieke breedte */
+        height: 250px;
+        /* Specifieke hoogte */
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .bed-informatie {
+        text-align: center;
+    }
+
+    .bed {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 1.1em;
+        padding: 10px;
+    }
+
+    .bed figcaption {
+        font-size: 1em;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .klik-icoon {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .locatie-informatie {
+        text-align: center;
+        color: #fff;
+    }
+
+    .locatie-informatie figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .locatie-informatie img {
+        width: 300px;
+        /* Breedte van de kaart */
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .locatie-informatie address {
+        font-style: normal;
+        line-height: 1.6;
+        color: #fff;
+        text-align: center;
+    }
+
+    .locatie-informatie a {
+        color: #4CAF50;
+        /* Groenachtige kleur voor links */
+        text-decoration: none;
+    }
+
+    .locatie-informatie a:hover {
+        text-decoration: underline;
+    }
+
 }
 
-.Doneren-page {
-    background: linear-gradient( to bottom, rgb(60, 166, 130) , #020a06);
+.Doneren-pagina {
+    background: linear-gradient(to bottom, rgb(60, 166, 130), #020a06);
+}
+
     .Home {
         position: absolute;
-        top: 10px; 
-        left: 10px; 
-        width: 30px; 
-        height: auto; 
+        top: 10px;
+        left: 10px;
+        width: 30px;
+        height: auto;
     }
-     
-   .Terug{
-    position: absolute;
-        top: 10px; 
-        left: 290px; 
-        width: 30px; 
-        height: auto; 
+
+    .Terug {
+        position: absolute;
+        top: 10px;
+        left: 290px;
+        width: 30px;
+        height: auto;
         justify-content: flex-end
     }
-}
-   
+
 
 
 .btn {
@@ -146,4 +246,73 @@ p {
         padding: 8px;
     }
 
+}
+
+.donatietekst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.donatietekst mijnpassietekst {
+    color: rgb linear-gradientcolor:rgb(42, 222, 135);
+}
+
+
+/* Donatie Box */
+.donatie-box figure {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.donatie-box img {
+    width: 100px;
+    height: auto;
+}
+
+.donatie-box .qr-code {
+    width: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Donatie Opties */
+.donatie-opties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.donatie-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+}
+
+.donatie-item img {
+    width: 100px;
+    height: auto;
+    transform: rotate(-10deg);
+    /* Lichtjes gekanteld */
+    align-self: flex-start;
+}
+
+.donatie-item:nth-child(even) img {
+    transform: rotate(10deg);
+    /* Kantel de even items de andere kant op */
+    align-self:flex-end;
+}
+
+.donatie-item figcaption {
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #fff;
 }
