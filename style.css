@@ -52,6 +52,7 @@ p {
 
 }
 
+/*Navigatie knoppen styling*/
 .Home {
     position: absolute;
     top: 10px;
@@ -88,135 +89,90 @@ p {
 
 .Verblijfplek-page {
     background: linear-gradient(to bottom, #22553b, #020a06);
-
-    .Home {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 30px;
-        height: auto;
-    }
-
-    .Vooruit {
-        position: absolute;
-        top: 10px;
-        left: 330px;
-        width: 30px;
-        height: auto;
-        justify-content: flex-end
-    }
-
-    .Terug {
-        position: absolute;
-        top: 10px;
-        left: 290px;
-        width: 30px;
-        height: auto;
-        justify-content: flex-end
-    }
-
-    .huislegerdesheils img {
-        width: 500px;
-        /* Specifieke breedte */
-        height: 250px;
-        /* Specifieke hoogte */
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        gap: 30px;
-    }
-
-    .bed-informatie {
-        text-align: center;
-    }
-
-    .bed {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        font-size: 1.1em;
-        padding: 10px;
-    }
-
-    .bed figcaption {
-        font-size: 1em;
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-
-    .klik-icoon {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        bottom: 10px;
-    }
-
-    .locatie-informatie {
-        text-align: center;
-        color: #fff;
-    }
-
-    .locatie-informatie figure {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .locatie-informatie img {
-        width: 300px;
-        /* Breedte van de kaart */
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
-
-    .locatie-informatie address {
-        font-style: normal;
-        line-height: 1.6;
-        color: #fff;
-        text-align: center;
-    }
-
-    .locatie-informatie a {
-        color: #4CAF50;
-        /* Groenachtige kleur voor links */
-        text-decoration: none;
-    }
-
-    .locatie-informatie a:hover {
-        text-decoration: underline;
-    }
-
 }
+
+.huislegerdesheils img {
+    width: 500px;
+    /* Specifieke breedte */
+    height: 250px;
+    /* Specifieke hoogte */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.bed-informatie {
+    text-align: center;
+}
+
+.bed {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+.bed figcaption {
+    font-size: 1em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.klik-icoon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.locatie-informatie {
+    text-align: center;
+    color: #fff;
+}
+
+.locatie-informatie figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locatie-informatie img {
+    width: 300px;
+    /* Breedte van de kaart */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.locatie-informatie address {
+    font-style: normal;
+    line-height: 1.6;
+    color: #fff;
+    text-align: center;
+}
+
+.locatie-informatie a {
+    color: #4CAF50;
+    /* Groenachtige kleur voor links */
+    text-decoration: none;
+}
+
+.locatie-informatie a:hover {
+    text-decoration: underline;
+}
+
 
 .Doneren-pagina {
     background: linear-gradient(to bottom, rgb(60, 166, 130), #020a06);
 }
-
-    .Home {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 30px;
-        height: auto;
-    }
-
-    .Terug {
-        position: absolute;
-        top: 10px;
-        left: 290px;
-        width: 30px;
-        height: auto;
-        justify-content: flex-end
-    }
-
-
 
 .btn {
     display: block;
@@ -257,7 +213,7 @@ p {
 }
 
 .donatietekst mijnpassietekst {
-    color: rgb linear-gradientcolor:rgb(42, 222, 135);
+    color: linear-gradientcolor(rgb(42, 222, 135));
 }
 
 
@@ -308,7 +264,7 @@ p {
 .donatie-item:nth-child(even) img {
     transform: rotate(10deg);
     /* Kantel de even items de andere kant op */
-    align-self:flex-end;
+    align-self: flex-end;
 }
 
 .donatie-item figcaption {
