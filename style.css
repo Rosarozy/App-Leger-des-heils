@@ -13,15 +13,36 @@ h1 {
     padding: 20px;
 }
 
-p {
-    font-size: 18px;
-    text-align: center;
+p.achtergrond {
+    font-size: 10px;
+    text-align: left;
     padding: 10px;
+    font-size: 1em;
+    margin-top: 80px;
+    margin-bottom: 20px;
+
+
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Zwarte overlay met transparantie */
+    color: #ffffff;
+    /* Witte tekst voor contrast */
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+    /* Zorg ervoor dat de tekst niet te breed is */
+
+}
+
+.biljet {
+    width: 100px;
+    height: auto;
 }
 
 /* Specifieke styling per pagina */
 .home-page {
     background: linear-gradient(to bottom, #bd2d2d, #020a06);
+    background-attachment: fixed;
+
 
     .Vooruit {
         position: absolute;
@@ -49,10 +70,10 @@ p {
 
 .legerdesheils-page {
     background: linear-gradient(to bottom, #72319e, #020a06);
+    background-attachment: fixed;
 
 }
 
-/*Navigatie knoppen styling*/
 .Home {
     position: absolute;
     top: 10px;
@@ -89,54 +110,43 @@ p {
 
 .Verblijfplek-page {
     background: linear-gradient(to bottom, #22553b, #020a06);
+    background-attachment: fixed;
+
+
 }
 
-.huislegerdesheils img {
-    width: 500px;
+.bed img {
+    width: 100px;
     /* Specifieke breedte */
-    height: 250px;
+    height: 150px;
     /* Specifieke hoogte */
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    gap: 30px;
+
+
+.huislegerdesheils img {
+    width: 100px;
+    /* Specifieke breedte */
+    height: 150px;
+    /* Specifieke hoogte */
 }
 
 .bed-informatie {
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
 }
 
 .bed {
+    background-image: url("Images/bed.png");
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 1.1em;
-    padding: 10px;
 }
 
 .bed figcaption {
     font-size: 1em;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 20px;
-}
-
-.klik-icoon {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 10px;
-}
-
-.locatie-informatie {
-    text-align: center;
-    color: #fff;
 }
 
 .locatie-informatie figure {
@@ -150,28 +160,23 @@ main {
     /* Breedte van de kaart */
     border-radius: 8px;
     margin-bottom: 10px;
+    cursor: pointer;
+
 }
+
+
 
 .locatie-informatie address {
     font-style: normal;
     line-height: 1.6;
     color: #fff;
     text-align: center;
-}
 
-.locatie-informatie a {
-    color: #4CAF50;
-    /* Groenachtige kleur voor links */
-    text-decoration: none;
 }
-
-.locatie-informatie a:hover {
-    text-decoration: underline;
-}
-
 
 .Doneren-pagina {
     background: linear-gradient(to bottom, rgb(60, 166, 130), #020a06);
+    background-attachment: fixed;
 }
 
 .btn {
@@ -225,7 +230,8 @@ main {
 }
 
 .donatie-box img {
-    width: 100px;
+    width: 150px;
+    /* Pas de grootte van de afbeelding aan */
     height: auto;
 }
 
@@ -235,6 +241,10 @@ main {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+    font-size: 1.2em;
+    color: #c1da4f;
+    margin-top: 10px;
+    text-align: center;
 }
 
 /* Donatie Opties */
