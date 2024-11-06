@@ -7,10 +7,77 @@ body {
     color: #eee8e8;
 }
 
+/* Home */
 h1 {
     text-align: center;
-    font-size: 24px;
-    padding: 20px;
+    font-size: 40px;
+    padding: 60px;
+    margin: 0;
+}
+
+/* Leger des heils tekst */
+h2 {
+    text-align: center;
+    font-size: 35px;
+    padding: 50px;
+}
+
+/* Verblijf tekst tekst */
+h3 {
+    text-align: left;
+    font-size: 35px;
+    padding: 35px;
+    padding-bottom: 10px;
+    padding-left: 90px;
+}
+
+/* Doantie tekst */
+h4 {
+    text-align: left;
+    font-size: 35px;
+    padding: 30px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+}
+
+
+h5 {
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+    margin: 0;
+
+}
+
+/*Pasie teskt in vak gezet */
+h6 {
+    text-align: left;
+    font-size: 18px;
+    padding-bottom: 10px;
+    background: linear-gradient(to bottom, #9d8787, #573b3b);
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 0;
+
+}
+
+
+p {
+    text-align: left;
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    /* Voor een licht afgeronde rand */
+    color: #ffffff;
+    /* Tekstkleur, indien nodig aanpassen */
+    margin: 0;
+    /* Verwijder eventuele standaard marges */
 }
 
 p.achtergrond {
@@ -23,19 +90,10 @@ p.achtergrond {
 
 
     background-color: rgba(0, 0, 0, 0.6);
-    /* Zwarte overlay met transparantie */
     color: #ffffff;
-    /* Witte tekst voor contrast */
     padding: 10px;
     border-radius: 8px;
     max-width: 80%;
-    /* Zorg ervoor dat de tekst niet te breed is */
-
-}
-
-.biljet {
-    width: 100px;
-    height: auto;
 }
 
 /* Specifieke styling per pagina */
@@ -43,29 +101,50 @@ p.achtergrond {
     background: linear-gradient(to bottom, #bd2d2d, #020a06);
     background-attachment: fixed;
 
-
+    /* vooruit knop*/
     .Vooruit {
         position: absolute;
         top: 10px;
-        left: 330px;
-        width: 30px;
+        left: 280px;
+        width: 70px;
         height: auto;
-        justify-content: flex-end
+        justify-content: flex-end;
+        background-color: transparent;
+
     }
 
 }
 
+/* Logo rosalichtpunt*/
 .header-logo img {
-    /* Als Class staat in je HTML dan zet je in CSS . */
+
     position: absolute;
     top: 2px;
-    /* Kleine afstand vanaf de bovenkant */
     left: 10px;
-    /* Kleine afstand vanaf de linkerkant */
     width: 60px;
-    /* Stel de breedte in op een kleinere waarde */
     height: auto;
-    /* Houdt de verhoudingen van het logo intact */
+    background-color: #c37c7c;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+
+}
+
+/* gewenste breedte / hoogte doantie afbeelding */
+.witdonatie {
+    width: 290px !important;
+    height: auto !important;
+
+
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    /* Zentraal uitlijnen in de hoogte */
+    justify-content: space-between;
+    padding: 5px 10px;
+    /* Pas de padding naar wens aan */
 }
 
 .legerdesheils-page {
@@ -74,19 +153,30 @@ p.achtergrond {
 
 }
 
+.bedden {
+    width: 300px !important;
+    height: auto !important;
+}
+
+.huisafbeelding {
+    width: 300px !important;
+    height: auto !important;
+}
+
+/* Alle naviagitie knoppen*/
 .Home {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 30px;
+    width: 50px;
     height: auto;
 }
 
 .Vooruit {
     position: absolute;
     top: 10px;
-    left: 330px;
-    width: 30px;
+    left: 310px;
+    width: 50px;
     height: auto;
     justify-content: flex-end
 }
@@ -94,19 +184,12 @@ p.achtergrond {
 .Terug {
     position: absolute;
     top: 10px;
-    left: 290px;
-    width: 30px;
+    left: 250px;
+    width: 50px;
     height: auto;
     justify-content: flex-end
 }
 
-
-.klik-icoon {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 10px;
-}
 
 .Verblijfplek-page {
     background: linear-gradient(to bottom, #22553b, #020a06);
@@ -115,81 +198,68 @@ p.achtergrond {
 
 }
 
-.bed img {
-    width: 100px;
-    /* Specifieke breedte */
-    height: 150px;
-    /* Specifieke hoogte */
-}
-
-
-
-.huislegerdesheils img {
-    width: 100px;
-    /* Specifieke breedte */
-    height: 150px;
-    /* Specifieke hoogte */
-}
-
-.bed-informatie {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-}
-
+/* Bed-container en positionering */
 .bed {
-    background-image: url("Images/bed.png");
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Grootte van het bed */
+.grotebed {
+    width: 290px;
+    height: auto;
+}
+
+/* Tekst binnen het bed */
+.bedtekst {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    color: white;
+    text-align: left;
+    width: 100%;
+    font-size: 30px;
+    padding: 340px;
+    
 
 }
 
-.bed figcaption {
-    font-size: 1em;
-    margin-top: 80px;
-    margin-bottom: 20px;
-}
-
-.locatie-informatie figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.locatie-informatie img {
-    width: 300px;
-    /* Breedte van de kaart */
-    border-radius: 8px;
-    margin-bottom: 10px;
-    cursor: pointer;
-
-}
-
-
-
-.locatie-informatie address {
-    font-style: normal;
-    line-height: 1.6;
-    color: #fff;
+/* Map-tekst styling */
+.map {
     text-align: center;
-
+    font-size: 35px;
+    padding: 20px;
+    
 }
+
+/* Link naar locatie */
+.location-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.location-link:hover .map-image {
+    transform: scale(1.1);
+}
+
+/* Grootte van het kaart-icoon */
+.map-image {
+    width: 100px;
+    height: auto;
+}
+
 
 .Doneren-pagina {
     background: linear-gradient(to bottom, rgb(60, 166, 130), #020a06);
     background-attachment: fixed;
 }
 
-.btn {
-    display: block;
-    width: 100px;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #007BFF;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-}
+
 
 /* Specifieke media query voor iPhone 6/7/8 resolutie */
 @media screen and (max-width: 375px) and (max-height: 667px) {
@@ -209,6 +279,27 @@ p.achtergrond {
 
 }
 
+
+/* Terug knop*/
+.Doneren-pagina {
+    .Terug {
+        position: absolute;
+        top: 15px;
+        left: 280px;
+        width: 54px;
+        height: auto;
+    }
+
+    .Home {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 50px;
+        height: auto;
+    }
+
+}
+
 .donatietekst {
     display: flex;
     flex-direction: column;
@@ -217,54 +308,36 @@ p.achtergrond {
     gap: 30px;
 }
 
-.donatietekst mijnpassietekst {
-    color: linear-gradientcolor(rgb(42, 222, 135));
-}
-
 
 /* Donatie Box */
 .donatie-box figure {
     position: relative;
     text-align: center;
     color: #fff;
+    
 }
 
-.donatie-box img {
-    width: 150px;
-    /* Pas de grootte van de afbeelding aan */
-    height: auto;
-}
 
-.donatie-box .qr-code {
-    width: 50px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.2em;
-    color: #c1da4f;
-    margin-top: 10px;
-    text-align: center;
-}
+
 
 /* Donatie Opties */
 .donatie-opties {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .donatie-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 200px;
+    max-width: 300px;
     text-align: center;
 }
 
 .donatie-item img {
-    width: 100px;
+    width: 200px;
     height: auto;
     transform: rotate(-10deg);
     /* Lichtjes gekanteld */
@@ -279,6 +352,13 @@ p.achtergrond {
 
 .donatie-item figcaption {
     font-size: 0.9em;
-    margin-top: 10px;
+    margin-top: 20px;
     color: #fff;
+}
+
+.qr-code {
+    width: 200px; /* Pas deze waarde aan voor een grotere of kleinere QR-code */
+    height: 300px; /* Houd de verhouding van de afbeelding */
+    display: block;
+    margin: 0 auto; /* Centreert de QR-code */
 }
